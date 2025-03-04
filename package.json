@@ -1,0 +1,25 @@
+{
+  "name": "pode",
+  "displayName": "Decapode",
+  "description": "Provides Syntax Highlighting for the Decapode DSL.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pode",
+      "aliases": ["Decapodes", "pode"],
+      "extensions": [".pode"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pode",
+      "scopeName": "source.pode",
+      "path": "./syntaxes/pode.tmLanguage.json"
+    }]
+  }
+}
