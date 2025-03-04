@@ -9,6 +9,9 @@
 			"include": "#types"
 		},
 		{
+			"include": "#grouping"
+		},
+		{
 			"include": "#digits"
 		}
 	],
@@ -33,7 +36,17 @@
 				"end": "$",
 				"contentName": "entity.name.type.pode"
 			}]
-		}
+		},
+		"grouping": {
+			"patterns": [{
+				"begin": "\\(",
+				"end": "\\)",
+				"patterns": [{
+					"include": "source.pode"
+				}],
+				"name": "meta.group.pode"
+			}]
+		},
 		"digits": {
 			"patterns": [{
 				"name": "constant.numeric.pode",
