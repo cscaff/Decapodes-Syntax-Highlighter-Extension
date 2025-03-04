@@ -12,6 +12,9 @@
 			"include": "#grouping"
 		},
 		{
+			"include": "#functions"
+		},
+		{
 			"include": "#digits"
 		}
 	],
@@ -47,12 +50,22 @@
 				"name": "meta.group.pode"
 			}]
 		},
+		"functions": {
+			"patterns": [{
+				"match": "\\S+(?=\\()",
+				"captures": {
+					"0": {
+						"name": "entity.name.function.pode"
+					}
+				}
+			}]
+		},
 		"digits": {
 			"patterns": [{
 				"name": "constant.numeric.pode",
-				"match": "([-]?)([0-9]+)(\\.[0-9]+(e[0-9]+)?)?"
+				"match": "-?([0-9]+)(\\.[0-9]+(e[0-9]+)?)?"
 			}]
-		}}
+		}
 	},
 	"scopeName": "source.pode"
 }
