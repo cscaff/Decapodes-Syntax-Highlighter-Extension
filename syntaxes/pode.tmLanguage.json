@@ -6,6 +6,9 @@
 			"include": "#comments"
 		},
 		{
+			"include": "#types"
+		},
+		{
 			"include": "#digits"
 		}
 	],
@@ -24,6 +27,13 @@
 				}
 			]
 		},
+		"types": {
+			"patterns": [{
+				"begin": "::",
+				"end": "$",
+				"contentName": "entity.name.type.pode"
+			}]
+		}
 		"digits": {
 			"patterns": [{
 				"name": "constant.numeric.pode",
