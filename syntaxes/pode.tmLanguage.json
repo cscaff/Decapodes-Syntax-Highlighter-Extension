@@ -22,21 +22,27 @@
 		"comments": {
 			"patterns": [
 				{
+					"begin": "#=",
+					"end": "=#",
+					"patterns": [
+					{
+						"match": "^(?![\\S\\s]*=#)[\\S\\s]*",
+						"name": "comment.block.pode"
+					}
+					],
+					"name": "comment.block.pode"
+				},
+				{
 					"begin": "#",
 					"end": "$",
 					"name": "comment.line.pode"
-				},
-				{
-					"begin": "#=",
-					"end": "=#",
-					"name": "comment.block.pode"
 				}
 			]
 		},
 		"types": {
 			"patterns": [{
 				"begin": "::",
-				"end": "$",
+				"end": "\\s",
 				"contentName": "entity.name.type.pode"
 			}]
 		},
