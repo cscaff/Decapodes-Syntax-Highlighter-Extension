@@ -1,0 +1,15 @@
+{
+    "name": "Decapode Julia",
+    "scopeName": "source.julia.pode",
+    "fileTypes": [
+        "jl"
+    ],
+    "patterns": [
+        {
+            "include": "source.julia.podeBlock"
+        },
+        {
+            "include": "source.julia"
+        }
+    ]
+}

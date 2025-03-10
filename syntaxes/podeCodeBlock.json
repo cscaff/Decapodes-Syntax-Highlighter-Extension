@@ -9,24 +9,24 @@
     ],
     "repository": {
         "decapode_block": {
-                    "name": "block.julia.pode",
+                    "name": "block.julia.podeBlock",
                     "begin": "(^|\\G)(\\s*)(decapode\")",
                     "end": "(^\\G)(\\s*)(\")",
                     "beginCaptures": {
                         "3": {
-                            "name": "support.function.macro.julia.pode"
+                            "name": "support.function.macro.julia.podeBlock"
                         }
                     },
                     "endCaptures": {
                         "3": {
-                            "name": "support.function.macro.julia.pode"
+                            "name": "support.function.macro.julia.podeBlock"
                         }
                     },
                     "patterns": [
                         {
                             "begin": "(^|\\G)(\\s*)(.*)",
                             "while": "(^|\\G)(?!\\s*(\")\\s*$)",
-                            "contentName": "meta.embedded.block.julia.pode",
+                            "contentName": "meta.embedded.block.julia.podeBlock",
                             "patterns": [
                                 {
                                     "include": "source.julia"
@@ -36,5 +36,5 @@
                     ]
                 }
     },
-    "scopeName": "source.julia.pode"
+    "scopeName": "source.julia.podeBlock"
 }
