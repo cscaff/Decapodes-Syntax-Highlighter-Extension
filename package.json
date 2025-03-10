@@ -12,11 +12,25 @@
   "contributes": {
     "grammars": [
     {
-      "language": "Catlab Language",
-      "scopeName": "source.julia.pode",
-      "path": "syntaxes/CatlabLang.tmLanguage.json"
+      "language": "Decapodes",
+      "scopeName": "source.pode",
+      "path": "./syntaxes/pode.tmLanguage.json"
     },
-    {}
+    {
+      "language": "Decapode_Julia",
+      "scopeName": "source.julia.pode",
+      "path": "./syntaxes/decapodejulia.json"
+    },
+    {
+      "scopeName": "source.julia.podeBlock",
+      "path": "./syntaxes/podeCodeBlock.json",
+      "inejctTo": [
+        "source.julia"
+      ],
+      "embeddedLanguages": {
+        "meta.embedded.block.julia.podeBlock": "pode"
+      }
+    }
   ]
   }
 }
