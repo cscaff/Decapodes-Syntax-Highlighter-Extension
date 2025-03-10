@@ -1,0 +1,40 @@
+{
+    "comment": "This is a Julia language file that embeds a Decapode language into the decapode string macro",
+    "fileTypes": [],
+    "injectionSelector": "L:source.julia",
+    "patterns": [
+        {
+            "include": "#decapode_block"
+        }
+    ],
+    "repository": {
+        "decapode_block": {
+                    "name": "block.julia.pode",
+                    "begin": "(^|\\G)(\\s*)(decapode\")",
+                    "end": "(^\\G)(\\s*)(\")",
+                    "beginCaptures": {
+                        "3": {
+                            "name": "support.function.macro.julia.pode"
+                        }
+                    },
+                    "endCaptures": {
+                        "3": {
+                            "name": "support.function.macro.julia.pode"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "begin": "(^|\\G)(\\s*)(.*)",
+                            "while": "(^|\\G)(?!\\s*(\")\\s*$)",
+                            "contentName": "meta.embedded.block.julia.pode",
+                            "patterns": [
+                                {
+                                    "include": "source.julia"
+                                }
+                            ]
+                        }
+                    ]
+                }
+    },
+    "scopeName": "source.julia.pode"
+}

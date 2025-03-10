@@ -1,7 +1,7 @@
 {
-  "name": "pode",
-  "displayName": "Decapode",
-  "description": "Provides Syntax Highlighting for the Decapode DSL.",
+  "name": "language-catlab",
+  "displayName": "Catlab Syntax Highlighting",
+  "description": "Provides Syntax Highlighting for Catlab DSLs.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.97.0"
@@ -10,16 +10,13 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "pode",
-      "aliases": ["Decapodes", "pode"],
-      "extensions": [".pode"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "pode",
-      "scopeName": "source.pode",
-      "path": "./syntaxes/pode.tmLanguage.json"
-    }]
+    "grammars": [
+    {
+      "language": "Catlab Language",
+      "scopeName": "source.julia.pode",
+      "path": "syntaxes/CatlabLang.tmLanguage.json"
+    },
+    {}
+  ]
   }
 }
