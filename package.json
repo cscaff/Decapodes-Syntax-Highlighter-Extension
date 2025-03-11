@@ -9,26 +9,30 @@
   "categories": [
     "Programming Languages"
   ],
+  "activationEvents": [
+    "onLanguage:decapodes",
+    "onLanguage:decapode_julia"
+  ],
   "contributes": {
     "grammars": [
     {
-      "language": "Decapodes",
+      "language": "decapodes",
       "scopeName": "source.pode",
       "path": "./syntaxes/pode.tmLanguage.json"
     },
     {
-      "language": "Decapode_Julia",
+      "language": "decapode_julia",
       "scopeName": "source.julia.pode",
       "path": "./syntaxes/decapodejulia.json"
     },
     {
       "scopeName": "source.julia.podeBlock",
       "path": "./syntaxes/podeCodeBlock.json",
-      "inejctTo": [
+      "injectTo": [
         "source.julia"
       ],
       "embeddedLanguages": {
-        "meta.embedded.block.julia.podeBlock": "pode"
+        "meta.embedded.block.julia": "pode"
       }
     }
   ]

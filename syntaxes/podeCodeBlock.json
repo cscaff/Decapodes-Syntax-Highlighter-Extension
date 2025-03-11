@@ -26,7 +26,7 @@
                         {
                             "begin": "(^|\\G)(\\s*)(.*)",
                             "while": "(^|\\G)(?!\\s*(\")\\s*$)",
-                            "contentName": "meta.embedded.block.julia.podeBlock",
+                            "contentName": "meta.embedded.block.julia",
                             "patterns": [
                                 {
                                     "include": "source.julia"

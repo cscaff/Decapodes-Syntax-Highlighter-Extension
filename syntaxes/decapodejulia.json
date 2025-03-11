@@ -2,7 +2,7 @@
     "name": "Decapode Julia",
     "scopeName": "source.julia.pode",
     "fileTypes": [
-        "jl"
+        "jlpode"
     ],
     "patterns": [
         {
