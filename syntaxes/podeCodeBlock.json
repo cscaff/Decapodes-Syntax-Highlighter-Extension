@@ -10,23 +10,23 @@
     "repository": {
         "decapode_block": {
                     "name": "block.julia.podeBlock",
-                    "begin": "(decapode)(\")",
-                    "end": "(^|\\G)(\\s*)(\")\\s*$",
+                    "begin": "((decapode)(\"))\\s*([^\"]*)?$",
+                    "end": "(\\s*)(\")",
                     "beginCaptures": {
-                        "0": {
+                        "1": {
                             "name": "support.function.macro.emphasis.julia.podeBlock"
                         }
                     },
                     "endCaptures": {
-                        "3": {
+                        "2": {
                             "name": "support.function.macro.emphasis.julia.podeBlock"
                         }
                     },
                     "patterns": [
                         {
                             "begin": "(^|\\G)(\\s*)(.*)",
-                            "while": "(^|\\G)(?!\\s*(\")\\s*$)",
-                            "contentName": "emphasis.meta.embedded.source.pode",
+                            "while": "(^|\\G)(?!\\s*([\"])\\s*$)",
+                            "contentName": "meta.embedded.source.pode",
                             "patterns": [
                                 {
                                     "include": "source.pode"

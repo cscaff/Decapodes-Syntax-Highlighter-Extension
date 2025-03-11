@@ -50,9 +50,6 @@
 			"patterns": [{
 				"begin": "\\(",
 				"end": "\\)",
-				"patterns": [{
-					"include": "source.pode"
-				}],
 				"name": "meta.group.pode"
 			}]
 		},
