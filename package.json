@@ -20,7 +20,7 @@
     {
       "id": "decapode_julia",
       "aliases": ["Decapode Julia"],
-      "extensions": [".jlpode"],
+      "extensions": [".jl"],
       "configuration": "./language-configuration.json"
     }
   ],
