@@ -20,7 +20,7 @@
     {
       "id": "decapode_julia",
       "aliases": ["Decapode Julia"],
-      "extensions": [".jl"],
+      "extensions": [".jlpode"],
       "configuration": "./language-configuration.json"
     }
   ],
@@ -42,7 +42,7 @@
         "source.julia"
       ],
       "embeddedLanguages": {
-        "meta.embedded.block.julia": "pode"
+        "emphasis.meta.embedded.source.pode": "pode"
       }
     }
   ]
