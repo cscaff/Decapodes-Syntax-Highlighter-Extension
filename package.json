@@ -9,14 +9,24 @@
   "categories": [
     "Programming Languages"
   ],
-  "activationEvents": [
-    "onLanguage:decapodes",
-    "onLanguage:decapode_julia"
-  ],
   "contributes": {
-    "grammars": [
+    "languages": [
     {
-      "language": "decapodes",
+      "id": "Decapodes",
+      "aliases": ["Decapodes"],
+      "extensions": [".pode"],
+      "configuration": "./language-configuration.json"
+    },
+    {
+      "id": "decapode_julia",
+      "aliases": ["Decapode Julia"],
+      "extensions": [".jl"],
+      "configuration": "./language-configuration.json"
+    }
+  ],
+  "grammars": [
+    {
+      "language": "Decapodes",
       "scopeName": "source.pode",
       "path": "./syntaxes/pode.tmLanguage.json"
     },
