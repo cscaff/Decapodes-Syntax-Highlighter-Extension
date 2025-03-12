@@ -1,4 +1,4 @@
-# pode README
+# Decapodes Syntax Highlighter Extension README
 
 This is a VSCode extension for Decapode Syntax Highlighting. This extension will eventually be generalized to an AlgebraicJulia Syntax Highlighter.
 
