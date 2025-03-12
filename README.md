@@ -9,7 +9,9 @@ by a syntactic macro. This meant we were able to rely on Julia to provide proper
 when we utilize a string macro, we are constrained to the Julia extension's quotation highlighting. This brings back Julia highlighting to
 the string macro.
 
-![Example](images\highlightingExample.png)
+![Before Highlighting](images/before.png)
+
+![After Highlighting](images/after.png)
 
 ## Requirements
 
