@@ -1,7 +1,7 @@
 {
-  "name": "language-catlab",
-  "displayName": "Catlab Syntax Highlighting",
-  "description": "Provides Syntax Highlighting for Catlab DSLs.",
+  "name": "decapode_syntax_highlighter",
+  "displayName": "Decapode Syntax Highlighter",
+  "description": "Provides Syntax Highlighting for the Decapode DSL.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.97.0"
@@ -45,16 +45,6 @@
         "meta.embedded.source.pode": "pode"
       }
     }
-  ],
-  "tokenColors": [
-    {
-      "scope": "decablock.podeBlock",
-      "settings": {
-        "foreground": "#d4d4d4",
-        "fontStyle": "italic"
-      }
-    }
-  ],
-  "semanticHighlighting": true
+  ]
   }
 }

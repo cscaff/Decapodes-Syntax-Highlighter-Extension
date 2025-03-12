@@ -9,7 +9,7 @@
     ],
     "repository": {
         "decapode_block": {
-                    "name": "decablock.podeBlock",
+                    "name": "emphasis.decablock.podeBlock",
                     "begin": "(decapode)(\")",
                     "end": "\"",
                     "beginCaptures": {
