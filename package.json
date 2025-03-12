@@ -2,6 +2,7 @@
   "name": "decapode_syntax_highlighter",
   "displayName": "Decapode Syntax Highlighter",
   "description": "Provides Syntax Highlighting for the Decapode DSL.",
+  "icon": "images/extIcon.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.97.0"
