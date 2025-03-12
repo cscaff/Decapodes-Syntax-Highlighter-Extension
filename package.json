@@ -42,9 +42,19 @@
         "source.julia"
       ],
       "embeddedLanguages": {
-        "emphasis.meta.embedded.source.pode": "pode"
+        "meta.embedded.source.pode": "pode"
       }
     }
-  ]
+  ],
+  "tokenColors": [
+    {
+      "scope": "decablock.podeBlock",
+      "settings": {
+        "foreground": "#d4d4d4",
+        "fontStyle": "italic"
+      }
+    }
+  ],
+  "semanticHighlighting": true
   }
 }
