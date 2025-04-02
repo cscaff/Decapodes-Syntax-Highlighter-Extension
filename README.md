@@ -15,8 +15,6 @@ the string macro.
 
 ## Requirements
 
-The VSCode Julia extension should be installed prior.
-
 You need to activate the language in your VSCode language Mode settings.
 
 ## Known Issues
