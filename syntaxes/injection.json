@@ -1,6 +1,6 @@
 {
 	"scopeName": "highlightedString.injection",
-	"injectionSelector": "L:source.julia -comment",
+	"injectionSelector": "L:source.julia -comment -string",
 	"patterns": [
 	  {
 		"include": "#decapode_block"

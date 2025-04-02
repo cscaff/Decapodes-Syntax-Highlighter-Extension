@@ -15,8 +15,4 @@ the string macro.
 
 ## Requirements
 
-You need to activate the language in your VSCode language Mode settings.
-
-## Known Issues
-
-Unable to change general foreground color to differentiate Decapodes block from Julia code.
+The Julia extension should already be installed.
