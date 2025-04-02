@@ -17,6 +17,8 @@ the string macro.
 
 The VSCode Julia extension should be installed prior.
 
+You need to activate the language in your VSCode language Mode settings.
+
 ## Known Issues
 
 Unable to change general foreground color to differentiate Decapodes block from Julia code.
