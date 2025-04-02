@@ -9,9 +9,9 @@ by a syntactic macro. This meant we were able to rely on Julia to provide proper
 when we utilize a string macro, we are constrained to the Julia extension's quotation highlighting. This brings back Julia highlighting to
 the string macro.
 
-![Before Highlighting](images/before.png)
+![Before Highlighting](https://github.com/cscaff/Decapodes-Syntax-Highlighter-Extension/blob/master/images/before.png)
 
-![After Highlighting](images/after.png)
+![After Highlighting](https://github.com/cscaff/Decapodes-Syntax-Highlighter-Extension/blob/master/images/after.png)
 
 ## Requirements
 
