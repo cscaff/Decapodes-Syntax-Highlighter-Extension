@@ -1,7 +1,7 @@
 {
     "comment": "This is a Julia language file that embeds a Decapode language into the decapode string macro",
     "fileTypes": [],
-    "injectionSelector": "L:string.quoted.macro.julia",
+    "injectionSelector": "L:source.julia -comment",
     "patterns": [
         {
             "include": "#decapode_block"

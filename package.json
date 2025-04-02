@@ -1,8 +1,10 @@
 {
-  "name": "decapode_syntax_highlighter",
+  "name": "Decapode-Syntax-Highlighter",
   "displayName": "Decapode Syntax Highlighter",
   "description": "Provides Syntax Highlighting for the Decapode DSL.",
-  "icon": "images/extIcon.png",
+  "publisher": "ChristianScaff",
+  "repository": "https://github.com/cscaff/Decapodes-Syntax-Highlighter-Extension",
+  "icon": "images/extIcon.jpg",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.97.0"
@@ -10,38 +12,31 @@
   "categories": [
     "Programming Languages"
   ],
+  "extensionDependencies": [
+    "julialang.language-julia"
+  ],
+  "activationEvents": [
+    "onLanguage:julia"
+  ],
   "contributes": {
     "languages": [
     {
-      "id": "Decapodes",
-      "aliases": ["Decapodes"],
+      "id": "pode",
+      "aliases": ["Decapodes", "pode"],
       "extensions": [".pode"],
-      "configuration": "./language-configuration.json"
-    },
-    {
-      "id": "decapode_julia",
-      "aliases": ["Decapode Julia"],
-      "extensions": [".jl"],
       "configuration": "./language-configuration.json"
     }
   ],
   "grammars": [
     {
-      "language": "Decapodes",
+      "language": "pode",
       "scopeName": "source.pode",
       "path": "./syntaxes/pode.tmLanguage.json"
     },
     {
-      "language": "decapode_julia",
-      "scopeName": "source.julia.pode",
-      "path": "./syntaxes/decapodejulia.json"
-    },
-    {
       "scopeName": "source.julia.podeBlock",
       "path": "./syntaxes/podeCodeBlock.json",
-      "injectTo": [
-        "source.julia"
-      ],
+      "injectTo": [ "source.julia" ],
       "embeddedLanguages": {
         "meta.embedded.source.pode": "pode"
       }

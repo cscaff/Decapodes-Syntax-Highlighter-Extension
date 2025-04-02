@@ -1,0 +1,33 @@
+{
+	"scopeName": "highlightedString.injection",
+	"injectionSelector": "L:source.julia -comment",
+	"patterns": [
+	  {
+		"include": "#decapode_block"
+	  }
+	],
+	"repository": {
+	  "decapode_block": {
+		"begin": "(decapode)(\")",
+        "end": "\"",
+		"name": "strong.highlightedString",
+		"beginCaptures": {
+			"0": {
+				"name": "support.function.macro.julia.podeBlock"
+			}
+		},
+		"endCaptures": {
+			"0": {
+				"name": "support.function.macro.julia.podeBlock"
+			}
+		},
+		"contentName": "meta.embedded.source.julia",
+		"patterns": [
+			{
+				"include": "source.julia"
+			}
+		]
+	  }
+	}
+  }
+  
