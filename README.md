@@ -1,6 +1,6 @@
 # Decapodes Syntax Highlighter Extension
 
-This is a VSCode extension for Decapode Syntax Highlighting. This extension will eventually be generalized to an AlgebraicJulia Syntax Highlighter.
+This is a VSCode extension for Decapode Syntax Highlighting.
 
 ## Features
 
