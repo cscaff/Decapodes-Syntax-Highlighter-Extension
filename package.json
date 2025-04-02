@@ -5,7 +5,7 @@
   "publisher": "ChristianScaff",
   "repository": "https://github.com/cscaff/Decapodes-Syntax-Highlighter-Extension",
   "icon": "images/extIcon.jpg",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.97.0"
   },
