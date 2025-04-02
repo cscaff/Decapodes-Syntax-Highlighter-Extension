@@ -8,39 +8,16 @@
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.97.0"
-  },
-  "categories": [
+  },  "categories": [
     "Programming Languages"
   ],
-  "extensionDependencies": [
-    "julialang.language-julia"
-  ],
-  "activationEvents": [
-    "onLanguage:julia"
-  ],
   "contributes": {
-    "languages": [
-    {
-      "id": "pode",
-      "aliases": ["Decapodes", "pode"],
-      "extensions": [".pode"],
-      "configuration": "./language-configuration.json"
-    }
-  ],
-  "grammars": [
-    {
-      "language": "pode",
-      "scopeName": "source.pode",
-      "path": "./syntaxes/pode.tmLanguage.json"
-    },
-    {
-      "scopeName": "source.julia.podeBlock",
-      "path": "./syntaxes/podeCodeBlock.json",
-      "injectTo": [ "source.julia" ],
-      "embeddedLanguages": {
-        "meta.embedded.source.pode": "pode"
+    "grammars": [
+      {
+        "path": "./syntaxes/injection.json",
+        "scopeName": "highlightedString.injection",
+        "injectTo": ["source.julia"]
       }
-    }
-  ]
+    ]
   }
 }
