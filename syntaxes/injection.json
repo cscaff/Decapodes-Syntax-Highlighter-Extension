@@ -10,15 +10,18 @@
 	  "decapode_block": {
 		"begin": "(decapode)(\")",
         "end": "\"",
-		"name": "strong.highlightedString",
+		"name": "highlightedString.podeBlock",
 		"beginCaptures": {
-			"0": {
+			"1": {
 				"name": "support.function.macro.julia.podeBlock"
+			},
+			"2": {
+				"name": "punctuation.definition.string.begin.julia string.quoted.double.julia"
 			}
 		},
 		"endCaptures": {
 			"0": {
-				"name": "support.function.macro.julia.podeBlock"
+				"name": "punctuation.definition.string.end.julia string.quoted.double.julia"
 			}
 		},
 		"contentName": "meta.embedded.source.julia",
@@ -30,4 +33,3 @@
 	  }
 	}
   }
-  
